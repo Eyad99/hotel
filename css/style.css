@@ -1,0 +1,56 @@
+body{
+    background-color: #f4f4f4;
+}
+
+/*start login form*/
+.login{
+    width: 300px;
+    margin: 100px auto;
+}
+.login input{
+    margin-bottom: 10px;
+}
+.login .form-control{
+    background-color: #eaeaea;
+}
+.login .btn{
+    background-color: #b39943;
+}
+
+/*end login form*/
+
+.main-title {    
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.dark-blue-text {
+    color: #b39943;
+}
+
+/*table*/
+.main-table {
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+}
+
+.main-table td {
+	background-color: #FFF;
+	vertical-align: middle !important;
+}
+.main-table tr:first-child td { /* You Can Use Thead */
+	background-color: #b39943;
+	color: #333;
+}
+
+.main-table .btn {
+	padding: 3px 10px;
+}
+.text-center{
+
+color: rgb(138, 139, 53);
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel]="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">    
+
+    <title>Regester</title>
+</head>
+
+<body>
+
+    <form class="login">
+         <h2 class="main-title text-center dark-blue-text">REGESTER</h2>
+        <input class="form-control " type="text" name="name" placeholder="Name" autocomplete="off" />
+
+        <input class="form-control " type="text" name="username" placeholder="UserName" autocomplete="off" />
+
+        <input class="form-control " type="text" name="id_number" placeholder="Id_Number" autocomplete="off" />
+
+        <input class="form-control" type="text" name="Phone" placeholder="Phone" autocomplete="off" />
+
+        <input class="form-control" type="email" name="email" placeholder="Email" autocomplete="off" />
+
+        <input class="form-control" type="password" name="password" placeholder="Password" autocomplete="new-password" />
+
+
+        <input class="form-control" type="password" name="re_password" placeholder="Re_Password" autocomplete="Re_new-password" />
+
+        <a href="log_in.html">login </a>
+
+        <input class="btn btm-primary btn-block" type="submit" value="Login" />
+  
+  
+      </form>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.singlePageNav.min.js"></script>
+
+    
+      <script>
+            $(function(){
+
+        'use strict';
+        //hide placeholder on form foucs
+
+                $('[placeholder]').focus(function(){
+
+                    $(this).attr('data-text',$(this).attr('placeholder'));
+                    $(this).attr('placeholder','');
+                }).blur(function(){     //blur:used to remove focus
+                    $(this).attr('placeholder',$(this).attr('data-text'));
+
+                });
+
+         
+            
+            });
+      </script>
+      
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+
+    <title>ROOMS PAGE</title>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Hotel</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a class="external" href="rooms.html">Room</a></li>
+                    <li><a class="external" href="food.html">Food</a></li>
+                    <li><a class="external" href="emp orders.html">Orders</a></li>
+                    <li><a class="external" href="log_in.html">Log Out</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/bed1.jpg" alt="Image" class="tm-image">
+           </div>
+        
+        <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+            <h2 class="main-title text-center dark-blue-text">Premier Room</h2>
+            <p>A 40 sqm modern room with luxury touch in every corner. Our Premier Room offers the most exclusive room and bathroom design with separated standing high pressure rain shower cabin and bath tub</p>
+            <p><span class="light-blue-text">Rent a room a day : 30000</span></p>
+            <label>The Number Of Reservation Days</label>&nbsp;<input type="number" min="1"  placeholder="Enter the number of days of reservation" autocomplete="off" />
+            <br> 
+            <button type="button" class="btn btn-big dark-blue-bordered-btn">Reservation </button>
+            
+        </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="services">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/bed2.jpg" alt="Image" class="tm-image">
+       </div>
+    
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+        <h2 class="main-title text-center dark-blue-text">Deluxe Room</h2>
+        <p>It is the regular room in which you do not feel a tight space and is usually suitable for two people, for example a honeymoon or a father, mother and two children and contains matress.</p>
+        <p><span class="light-blue-text">Rent a room a day : 20000</span></p>
+        <label>The Number Of Reservation Days</label>&nbsp;<input type="number" min="1"  placeholder="Enter the number of days of reservation" autocomplete="off" />
+        <br> 
+            <button type="button" class="btn green-btn normal-btn">Reservation</button>
+       </div>
+
+   </section>
+
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/bed3.jpg" alt="Image" class="tm-image">
+       </div>
+
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+        <h2 class="main-title text-center dark-blue-text">superior Room</h2>
+        <p>A superior room is a room in a hotel that is more comfortable or has better amenities than other rooms. It is $245 for a standard room and $275 for a superior room. Superior rooms have a beautiful view over the hills. The superior rooms are larger than the standard rooms</p>
+        <p><span class="light-blue-text">Rent a room a day : 15000</span></p>
+         <label>The Number Of Reservation Days</label>&nbsp;<input type="number" min="1"  placeholder="Enter the number of days of reservation" autocomplete="off" />
+         <br> 
+               <button type="button" class="btn dark-blue-bordered-btn normal-btn">Reservation</button>                
+       </div>
+
+   </section>
+
+
+   <section class="col-md-12 content" id="contact">
+       <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/s.jpg" alt="Image" class="tm-image">
+       </div>
+
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+        <h2 class="main-title text-center dark-blue-text">standard Room</h2>
+        <p>A standard room comes in the category of the hotel's cheapest room. It is a type of single room, which has a king-size bed, or as two beds — this room is decorated with two queen-size beds.</p>
+        <p><span class="light-blue-text">Rent a room a day : 10000</span></p>
+        <label>The Number Of Reservation Days</label>&nbsp;<input type="number" min="1"  placeholder="Enter the number of days of reservation" autocomplete="off" />
+        <br> 
+          <button type="button" class="btn green-btn normal-btn">Reservation</button>
+     </div>
+</section>
+
+   </div>
+   
+   <div class="text-center footer">
+       <div class="container">
+           Copyright @ 2019 team AGE
+       </div>
+   </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {        
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {   
+    // Single page nav
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true        
+    });
+
+    checkScrollPosition();
+
+    // nav bar
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();    
+});
+</script>
+</body>
+</html>
